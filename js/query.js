@@ -1,4 +1,4 @@
-const SERVER = "http://localhost:3000"
+const SERVER = "http://server-url";
 
 function query(query,cb){
     var url = SERVER + "/daw/"+query;

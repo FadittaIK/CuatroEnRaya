@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Fatima">
+    <meta name="description" content="juego 4 en raya">
+    <meta name="keywords" content="jugar, pasatiempo, 4 en raya,competicion">
+    <meta property="og:title" content="Cuatro en raya">
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="imagen/conecta-4.jpg">
+    <meta property="og:url" content="juego.html">
+    <!-- Etiquetas para Twitter -->
+    <meta name="twitter:title" content="Cuatro en raya">
+    <meta name="twitter:image" content="imagen/conecta-4.jpg">
+    <meta name="twitter:description" content="juego 4 en raya">
+    <meta name="twitter:url" content="https://cuatroenrayafatimaikk.netlify.app/juego.html">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- la url del los iconos-->
+    <link rel="stylesheet" href="../css/ayuda.css">
+    <title>ayuda</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>4 EN RAYA</h1>
+            <ul>
+                <li><a href="../juego.html">Home</a></li>
+                <li><a href="../paginas/ayuda.html">Ayuda</a></li>
+                <li><a href="../paginas/mapa.html">Mapa</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+                <li><a href="../paginas/configuracion.html">Configuración</a></li>
+                <li><a href="../paginas/otro.html">Otro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wave-container">
+        <h2>¿COMO SE JUEGA AL 4 EN RAYA?</h2>
+        <div class="controlarWave">
+        <svg id="wave" style="transform:rotate(180deg); " viewBox="100 0 1350 500" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" >
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1 ;width: 100%;" fill="url(#sw-gradient-0)"
+                d="M0,196L120,163.3C240,131,480,65,720,98C960,131,1200,261,1440,277.7C1680,294,1920,196,2160,204.2C2400,212,2640,327,2880,359.3C3120,392,3360,343,3600,285.8C3840,229,4080,163,4320,130.7C4560,98,4800,98,5040,81.7C5280,65,5520,33,5760,81.7C6000,131,6240,261,6480,310.3C6720,359,6960,327,7200,334.8C7440,343,7680,392,7920,383.8C8160,376,8400,310,8640,261.3C8880,212,9120,180,9360,155.2C9600,131,9840,114,10080,114.3C10320,114,10560,131,10800,163.3C11040,196,11280,245,11520,236.8C11760,229,12000,163,12240,147C12480,131,12720,163,12960,179.7C13200,196,13440,196,13680,196C13920,196,14160,196,14400,236.8C14640,278,14880,359,15120,343C15360,327,15600,212,15840,179.7C16080,147,16320,196,16560,187.8C16800,180,17040,114,17160,81.7L17280,49L17280,490L17160,490C17040,490,16800,490,16560,490C16320,490,16080,490,15840,490C15600,490,15360,490,15120,490C14880,490,14640,490,14400,490C14160,490,13920,490,13680,490C13440,490,13200,490,12960,490C12720,490,12480,490,12240,490C12000,490,11760,490,11520,490C11280,490,11040,490,10800,490C10560,490,10320,490,10080,490C9840,490,9600,490,9360,490C9120,490,8880,490,8640,490C8400,490,8160,490,7920,490C7680,490,7440,490,7200,490C6960,490,6720,490,6480,490C6240,490,6000,490,5760,490C5520,490,5280,490,5040,490C4800,490,4560,490,4320,490C4080,490,3840,490,3600,490C3360,490,3120,490,2880,490C2640,490,2400,490,2160,490C1920,490,1680,490,1440,490C1200,490,960,490,720,490C480,490,240,490,120,490L0,490Z">
+            </path>
+        </svg><!--he creado esta  forma de onda con la  pagina https://www.softr.io/tools/svg-wave-generator-->
+    </div>
+    </div>
+    <main>
+    <section class="firstSection">
+        <article>
+            <div class="card">
+                <div class="seVe">
+                    <img src="../imagen/cuatro-en-raya-e1386008811341.png" alt="Cuatro en raya">
+                    <h3>¿Qué es el juego de cuatro en Raya?</h3>
+                    <button  id="0" onclick="verMas(0)">Ver Más</button>
+                </div>
+                
+                <div class="noSeVe"  id="0" >
+                    <p class="texto">El Cuatro en raya es un juego de mesa para 2 jugadores en el que los oponentes se
+                        turnan para dejar caer discos de colores desde la parte superior a una rejilla suspendida
+                        verticalmente de 7 columnas y 6 filas. Las piezas caen hacia abajo por gravedad, ocupando el
+                        siguiente espacio disponible dentro de la columna. El objetivo del juego es ser el primero en
+                        formar una línea horizontal, vertical o diagonal formada por 4 discos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="seVe">
+                    <img src="../imagen/jugadoresFundo.jpg" alt="">
+                    <h3>Jugadores</h3>
+                    <button  id="1"  onclick="verMas(1)">Ver Más</button>
+                </div>
+                <div class="noSeVe" id="2">
+                    <p class="texto">Es un juego para 2 jugadors.</p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="card">
+                <div class="seVe">
+                    <img src="../imagen/conecta-4.jpg" alt="">
+                    <h3>¿Cómo jugar al Cuatro en raya?</h3>
+                    <button  id="2"  onclick="verMas(2)">Ver Más</button>
+                </div>
+                <div class="noSeVe" id="2">
+                    <p class="texto">El objetivo del juego es alinear cuatro fichas de un mismo color en horizontal,
+                        vertical o diagonal.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="seVe">
+                    <img src="../imagen/fichasColores.jpg" alt="">
+                    <h3 >Fichas</h3>
+                    <button id="3"   onclick="verMas(3)">Ver Más</button>
+                </div>
+                <div class="noSeVe" id="3">
+                    <p class="texto">Cada jugador dispone de 21 fichas de un mismo color (de distinto color para cada
+                        jugador), un poco más
+                        grandes que el diámetro del agujero pasante.</p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="card">
+                <div class="seVe">
+                    <img src="../imagen/tablero.png" alt="">
+                    <h3>Tablero</h3>
+                    <button id="4"  onclick="verMas(4)">Ver Más</button>
+                </div>
+                <div class="noSeVe"  id="4">
+                    <p class="texto">El tablero está formado por una rejilla vertical de 7 columnas (verticales) y 6
+                        filas (horizontales), para un total de 42 casillas. El tablero tiene 42 agujeros redondos a
+                        ambos lados del tablero, lo que permite a los jugadores observar la posición de todas las
+                        fichas.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="seVe">
+                    <img src="../imagen/Winners-bro.png" alt="">
+                    <h3>Fin del juego</h3>
+                    <button id="5"  onclick="verMas(5)">Ver Más</button>
+                </div>
+                <div class="noSeVe"  id="5">
+                    <p class="texto">Gana la ronda el primer jugador que consiga alinear cuatro de sus fichas en
+                        horizontal, vertical o
+                        diagonal.</p>
+                    <p class="texto">Si todas las columnas están llenas pero nadie ha conseguido alinear cuatro de sus
+                        fichas, hay
+                        empate.</p>
+                    <p class="texto">El jugador con más rondas ganadas, gana la partida.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="secondSection">
+        <div>
+            <h3>VIDEOS EXPLICANDO COMO SE JUEGA AL 4 EN RAYA </h3>
+        </div>
+        <article class="playlist">
+
+            <h3>LISTA REPRODUCION DE VIDEOS SOBRE 4 EN RAYA:</h3>
+            <div class="listaVideos1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9fUX_mO7255By1f7ApZvUf1ZBxeU4iHd&autoplay=1&mute=1;controls=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                </div>
+        </article>
+        <article>
+            <h3>MÁS VIDEOS</h3>
+            <div class="video2">
+                <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/U7NmHkspCu4?autoplay=1&mute=1;controls=1"
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                
+            </div>
+        </article>
+        <article>
+            <div class="video3">
+                <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/P9dUfpTVFzY?autoplay=1&mute=1;controls=1"
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </article>
+        <article>
+            <div class="video4">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/pyV76e86DNw?autoplay=1&mute=1;controls=1"
+                    title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                </div>
+        </article>
+        
+    </section> 
+</main>
+    <footer>
+        <h1>4 EN RAYA</h1>
+        <div class="iconos">
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </footer>
+    <script src="../js/ayuda.js"></script>
+    <script src="../js/animacion.js"></script>
+</body>
+</html>

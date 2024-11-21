@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Fatima">
+    <meta name="description" content="juego 4 en raya">
+    <meta name="keywords" content="jugar, pasatiempo, 4 en raya,competicion">
+    <meta property="og:title" content="Cuatro en raya">
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="imagen/conecta-4.jpg">
+    <meta property="og:url" content="https://cuatroenrayafatimaikk.netlify.app/juego.html">
+    <!-- Etiquetas para Twitter -->
+    <meta name="twitter:title" content="Cuatro en raya">
+    <meta name="twitter:image" content="imagen/conecta-4.jpg">
+    <meta name="twitter:description" content="juego 4 en raya">
+    <meta name="twitter:url" content="https://cuatroenrayafatimaikk.netlify.app/juego.html"> <!--lo tengo q publicar por netlify-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- la url del los iconos-->
+    <link rel="stylesheet" href="../css/configuracion.css">
+    <title>configuracion</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>4 EN RAYA</h1>
+            <ul>
+                <li><a href="../juego.html">Home</a></li>
+                <li><a href="../paginas/ayuda.html">Ayuda</a></li>
+                <li><a href="../paginas/mapa.html">Mapa</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+                <li><a href="../paginas/configuracion.html">Configuración</a></li>
+                <li><a href="../paginas/otro.html">Otro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="container">
+                    <div class="titulo">
+                        <h2>Barra de Configuración</h2>
+                    </div>
+                <article>
+                    <div class="jugador">
+                        <h3>Cual Jugador</h3>
+                        <select name="numero" id="numero">
+                            <option value="1">Jugador 1</option>
+                            <option value="2">Jugador 2</option>
+                        </select>
+                    </div>
+                    <div class="cambiarIdioma">
+                        <h3>Activar la animación:</h3>
+                    <select name="fallLeave" id="fallLeave">
+                        <option value="no">Desactivar</option>
+                        <option value="si">Activar</option>
+                    </select>
+                    </div>
+                    
+                    <div class="colores">
+                        <h3>Color de las fichas</h3>
+                        <input type="radio" name="color" id="red">Rojo
+                        <input type="radio" name="color" id="blue">Azul
+                        <input type="radio" name="color" id="black">Negro
+                        <input type="radio" name="color" id="yellow">Amarillo
+                        <input type="radio" name="color" id="purple">Lila
+                    </div>
+                    <div class="niveles">
+                        <h3>Elige un Nivel</h3>
+                        <input type="radio" name="nivel" id="Facil">Fácil
+                        <input type="radio" name="nivel" id="medio">Medio
+                        <input type="radio" name="nivel" id="dificil">Difícil
+                    </div>
+                    <div class="guardarCancelar">
+                        <input type="submit" value="Guardar" onclick="guardar()">
+                        <input type="reset" value="Cancelar" onclick="borrar()">
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <h1>4 EN RAYA</h1>
+            <div class="iconos">
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-github"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+           
+        </footer>
+        <script src="../js/configuracion.js"></script>
+        <script src="../js/animacion.js"></script>
+     
+      
+                                                
+
+    </body>
+
+</html>

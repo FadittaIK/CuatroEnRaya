@@ -1,0 +1,106 @@
+@import "../css/esliloComun.css";
+main{
+    margin-top: 79px;
+}
+section>article:first-child{
+    display: flex;
+    justify-content: center;
+}
+main{
+    width: 100%;
+    height: 135vh;
+    background-color:#897e66;
+}
+main>section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+article:first-child{
+    width: 650px;
+    height: 650px;
+    margin-top: 100px;
+}
+
+article:nth-child(2){
+   width: 580px;
+   margin-top: 60px;
+} 
+
+article:nth-child(2) h2{
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    margin:auto auto  50px 50px;
+    
+}
+
+section>article:first-child>img{
+    width: 100%;;
+    height: 100%;
+}
+#formulario{
+    display: flex;
+    justify-content: center;
+   
+}
+#formulario>form{
+    border-radius: 6%;
+    box-shadow: 0 0 70px rgb(0, 0, 0);
+    z-index: 5;
+    width: 500px;
+    padding: 30px;
+    background-color:#79a38f  ;/*#8d7496*  #1C3879*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+   
+}
+#formulario>form>input,select{
+    height: 45px;
+    border-radius: 10px;
+
+}
+#formulario>form>input:last-child{
+    width: 40%;
+   margin: auto;
+}
+#formulario>form>input:last-child:hover{
+    cursor: pointer;
+    background: #411F1F;
+    color: #fff ;
+    transition: all 0.2s ease;
+}
+@media screen and (max-width:679px){
+    main{
+        height: auto;
+        width: auto;
+        margin-top: 24vh;
+    }
+    main>section{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+     article:first-child{
+        height: 50vh;
+        width: 50vh;
+    }
+    article:nth-child(2){
+      /*  margin-top: 20px;*/
+        margin:auto;
+
+    }
+    article:nth-child(2) #formulario{
+        margin-top: 420px;
+        margin-bottom: 30px;
+        
+    }
+    article:first-child{
+        position: absolute;
+        top: 120px;
+    }
+
+}

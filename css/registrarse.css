@@ -1,0 +1,102 @@
+@import "esliloComun.css";
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../imagen/otroWal.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+}
+
+main{
+    margin: auto;
+}
+section{
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20vh;
+}
+
+article:first-child{
+    width: 650px;
+    height: 650px;
+    margin-top: 100px;
+}
+
+article:nth-child(2){
+   width: 580px;
+   margin-top: 60px;
+} 
+
+#titulo{
+    font-size:2em;
+    color:#2a1919;
+    text-align: center;
+    margin: 20px 0;
+}
+#formulario{
+    display: flex;
+    justify-content: center;
+   
+}
+#formulario>form{
+    border-radius: 6%;
+    box-shadow: 0 0 70px rgb(0, 0, 0);
+    z-index: 5;
+    width: 500px;
+    padding: 30px;
+    background-color:#977f62  ;/*#8d7496*  #1C3879*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+   
+}
+#formulario>form>input,select{
+    height: 42px;
+    border-radius: 10px;
+
+}
+#formulario>form>input:last-child{
+    width: 40%;
+   margin: auto;
+}
+#formulario>form>input:last-child:hover{
+    cursor: pointer;
+    background: #411F1F;
+    color: #fff ;
+    transition: all 0.2s ease;
+}
+.info{
+    margin-top: 17vh;
+}
+
+@media screen and (max-width:680px) {
+    main{
+        margin-top: 200px;
+        width: auto;
+
+    }
+     section{
+        display: flex;
+        width: auto;
+        flex-wrap: wrap;
+    }
+    #titulo{
+        font-size:2em;
+        color:#2a1919;
+        text-align: center;
+        margin: 60px 0;
+    }
+    #formulario {
+        order: 2;
+        width: auto;
+    }
+    
+    .info {
+        order: 1;
+        width: auto;
+    }
+
+
+}

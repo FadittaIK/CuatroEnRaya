@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Fatima">
+        <meta name="description" content="juego 4 en raya">
+        <meta name="keywords" content="jugar, pasatiempo, 4 en raya,competicion">
+        <meta property="og:title" content="Cuatro en raya">
+        <meta property="og:type" content="article"/>
+        <meta property="og:image" content="imagen/conecta-4.jpg">
+        <meta property="og:url" content="https://cuatroenrayafatimaikk.netlify.app/juego.html">
+        <!-- Etiquetas para Twitter -->
+        <meta name="twitter:title" content="Cuatro en raya">
+        <meta name="twitter:image" content="imagen/conecta-4.jpg">
+        <meta name="twitter:description" content="juego 4 en raya">
+        <meta name="twitter:url" content="https://cuatroenrayafatimaikk.netlify.app/juego.html">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/contacto.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>contacto</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>4 EN RAYA</h1>
+                <ul>
+                    <li><a href="../juego.html">Home</a></li>
+                    <li><a href="../paginas/ayuda.html">Ayuda</a></li>
+                    <li><a href="../paginas/mapa.html">Mapa</a></li>
+                    <li><a href="../paginas/contacto.html">Contacto</a></li>
+                    <li><a href="../paginas/configuracion.html">Configuración</a></li>
+                    <li><a href="../paginas/otro.html">Otro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                        <img src="../imagen//ContactUs.png" alt="">
+                </article>
+               
+                <article>
+                    <h2>Contacta con nosotros</h2>
+                    <div  id="formulario">
+                        <form action="https://theteacher.codiblau.com/llmqs/practica/contacte" method="post">
+                            <label for="nombre">Nombre </label>
+                            <input type="text" name="nombre" id="no" placeholder=" Juan Fernandez" minlength="2" maxlength="30" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="correo" name="correo" placeholder=" correoElectronico@gmail.com" required>
+                            <label for="tipo">Tipos de consulta:</label>
+                            <select id="tipo" name="type">
+                                <option value="CONSULTA">Consulta general</option>
+                                <option value="ERROR">ERROR</option>
+                                <option value="MILLORA">Millora</option>
+                                <option value="SUBSCRIBE">Inscripción anual</option>
+                            </select>
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" placeholder=" 000-000-0000" name="tel" id="tel">
+                            <label for="birthday">Fecha de Nacimiento</label>
+                            <input type="date" name="bd" id="fehcaNaci">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea name="men" id="mensaje" cols="30" rows="10" required></textarea>
+                            <input type="submit" value="ENVIAR" id="consulta" name="ConsultaGeneral">
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </main> 
+        <footer>
+            <h1>4 EN RAYA</h1>
+            <div class="iconos">
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-github"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </footer>
+        <script src="../js/contactoLS.js"></script>
+        <script src="../js/animacion.js"></script>
+    </body>
+</html>

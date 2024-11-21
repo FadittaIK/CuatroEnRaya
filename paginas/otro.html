@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Fatima">
+        <meta name="description" content="juego 4 en raya">
+        <meta name="keywords" content="jugar, pasatiempo, 4 en raya,competicion">
+        <meta property="og:title" content="Cuatro en raya">
+        <meta property="og:type" content="article"/>
+        <meta property="og:image" content="imagen/conecta-4.jpg">
+        <meta property="og:url" content="https://cuatroenrayafatimaikk.netlify.app/juego.html">
+        <!-- Etiquetas para Twitter -->
+        <meta name="twitter:title" content="Cuatro en raya">
+        <meta name="twitter:image" content="imagen/conecta-4.jpg">
+        <meta name="twitter:description" content="juego 4 en raya">
+        <meta name="twitter:url" content="https://cuatroenrayafatimaikk.netlify.app/juego.html"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- la url del los iconos-->
+        <link rel="stylesheet" href="../css/registrarse.css">
+        <title>otro</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>4 EN RAYA</h1>
+                <ul>
+                    <li><a href="../juego.html">Home</a></li>
+                    <li><a href="../paginas/ayuda.html">Ayuda</a></li>
+                    <li><a href="../paginas/mapa.html">Mapa</a></li>
+                    <li><a href="../paginas/contacto.html">Contacto</a></li>
+                    <li><a href="../paginas/configuracion.html">Configuración</a></li>
+                    <li><a href="../paginas/otro.html">Otro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <h2 id="titulo">Registrarse</h2>
+                    <div  id="formulario">
+                        <form action="https://theteacher.codiblau.com/llmqs/practica/contacte" method="post">
+                            <label for="nombre">Nombre </label>
+                            <input type="text" name="name" id="nombre" placeholder=" Juan " minlength="2" maxlength="20" required>
+                            <label for="nombre">Apellido 1</label>
+                            <input type="text" name="ap1" id="ap1" placeholder="Fernandez" minlength="2" maxlength="30" required>
+                            <label for="nombre">Apellido 2 </label>
+                            <input type="text" name="ap2" id="ap2" placeholder="Garcia" minlength="2" maxlength="30" >
+                            <label>Ciudad</label>
+                            <select id="ciudad" name="type">
+                                <option value="139">139-BRELIN</option>
+                                <option value="12">12-EL CAIRO</option>
+                                <option value="159">159-MADRIR</option>
+                                <option value="155">155-PARIS</option>
+                            </select>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder=" correoElectronico@gmail.com" required>
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" placeholder=" 000-000-0000" name="phone" id="telefono">
+                            <label for="birthday">Fecha de Nacimiento</label>
+                            <input type="date" name="birthday" id="fehcaNacimiento">
+                            <input type="submit" value="REGISTRARSE" id="registrarse" name="ConsultaGeneral" onclick="insertarDatos()">
+                        </form>
+                    </div>
+                </article>
+                <article>
+                    <div class="info">
+                        <span class="missatge"></span>
+                        <h2> Los tres primeros usuarios clasificados:</h2>
+                        <span class="infoUsers"></span>
+                        <div></div>
+                        <h2>El porcentaje de los usuarios que han participado en algun torneo:</h2>
+                        <span class="procentaje"></span>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <h1>4 EN RAYA</h1>
+            <div class="iconos">
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-github"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </footer>
+        <script  src="../js/query.js"></script>
+        <script src="../js/registrarse.js"></script>
+        <script src="../js/animacion.js"></script>
+    </body>
+</html>

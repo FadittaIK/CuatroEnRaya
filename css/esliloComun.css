@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+}
+header{
+    font-family: 'Abril Fatface', cursive;
+    /* opacity: 0.9; */
+    z-index: 15;
+    max-width: 100%; 
+    position: relative;
+}
+header h1{
+    font-size: 2em;
+    margin-top: 10px;
+    animation: colors 5s ease-in-out infinite;
+    background: linear-gradient(45deg , #8DB596,#92817A,rgb(120, 71, 120),#707070) ;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;/*para especificar el color del background a el texto y restingir su visualizacion solo al area de las letras del texto*/
+    background-size: 200%;
+    -webkit-background-clip: text; 
+ }
+ @keyframes colors {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+    
+}
+
+nav{
+    width: 100%;
+}
+
+nav:first-child{
+    display: flex;
+    justify-content: space-around;
+    padding: 7px;
+   
+}
+nav:first-child{
+    flex-direction: row;
+    background-color:#000000;
+    position:fixed;
+    top: 0;
+}
+nav:first-child>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+nav:first-child>ul>li{
+    list-style: none;  
+}
+nav:first-child>ul>li>a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color:#79a38f   ;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+nav:first-child>ul>li>a:hover{
+     border-bottom: 4px solid #261C2C;
+    padding: 6px 0; 
+    color:  #B0A48A ;
+}
+
+
+/*canvas de pagina juego.html*/
+
+.bg{
+    margin-top: 7vh;
+    background-color: #897e66;
+}
+#juego{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#juego h2{
+    margin-top: 20vh;
+    width: 170px;
+    height: 270px;
+    padding: 10px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../imagen/configuracionFundo.jpg)no-repeat;
+}
+#juego h2 a{
+    color: #79a38f;
+}
+.error{
+    margin-top: 55vh;
+    width: 150px;
+    font-size: 1.3em;
+    color: rgb(88, 38, 38);
+}
+#miCanva {
+    border: 1px solid black;
+    margin: 100px;
+    background-color: #2d3a2c;
+}
+
+.partida{
+    margin-top: 20vh;
+    font-size: 1.4em;
+    width: 160px;
+    padding: 6px;
+    height: 115px;
+    color: wheat;
+    border: #000000 1px solid;
+    border-radius: 10%;
+    background-color: #261C2C;
+    box-shadow:6px 6px 6px rgba(0, 0, 0, 0.4);
+}
+.partida span{
+    padding: 6px;
+}
+.partida button{
+    padding: 4px;
+    width: 60px;
+    border-radius: 25%;
+    cursor: pointer;
+    background-color: #707070;
+}
+.partida button:hover{
+    background-color:wheat;
+    color: #000000;
+}
+
+
+footer{
+    height: 220px;
+    background-color: #000000;
+    text-align: center;
+}
+footer h1{
+    font-size: 3rem;
+    padding: 20px;
+    font-family: 'Abril Fatface', cursive;
+    color: #79a38f ;
+}
+footer .iconos{
+    border-top:2px solid #79a38f ;
+    width: 80%;
+    margin: auto;
+}
+
+footer .fa{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #79a38f ;
+    border-radius: 50%;
+    margin: 20px;
+    font-size: 25px;
+}
+footer .fa:hover{
+    background-color: rgb(120, 71, 120);
+    animation: agrandir 2s ease;
+}
+
+@keyframes agrandir {
+    to{
+        transform: scale(1.4);
+    }   
+}
+
+@media screen and (max-width:680px) {
+    nav{
+        width: auto;
+        height: 200px;
+        display:flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       margin: auto;
+    }
+    nav h1{
+        width:200px;
+    }
+    nav  ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main{
+        margin-top: 22vh;
+        width: auto;
+        height: auto;
+    }
+     #juego{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* flex-direction: row; */
+    }
+    
+    #juego h2{
+        width: 300px;
+        height: auto;
+    }
+
+    .centrar{
+         width: 400px; 
+         display: flex;
+         margin: auto 60px;
+         justify-items: center;
+         justify-content: center;
+    }
+    canvas{
+        width: 410px;
+        height: auto;
+        margin: 0;
+    }
+    .partida,.error{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    
+}
